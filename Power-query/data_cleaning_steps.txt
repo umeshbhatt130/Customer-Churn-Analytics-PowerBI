@@ -1,0 +1,20 @@
+
+DATA CLEANING & TRANSFORMATION STEPS (POWER QUERY)
+
+1. Imported raw CSV dataset containing 1M customer records.
+2. Standardized column names (lowercase, trimmed spaces).
+3. Changed data types (dates, integers, decimals, text).
+4. Removed duplicate customer_id records.
+5. Replaced NULL values:
+   - complaints, service_calls, late_payments → 0
+6. Fixed invalid values:
+   - Age outside 0–100 → NULL
+   - Credit score outside 300–900 → reset to 300
+   - Negative charges → NULL
+7. Cleaned text fields (gender, education, contract, payment method).
+8. Created derived columns:
+   - Churn Status (Churned / Active)
+   - Signup Month
+   - Tenure Band (0–6m, 6–12m, 1–2y, 2–5y, 5+y)
+   - Income Band (<30K, 30–60K, 60–100K, 100K+)
+9. Reordered columns for modeling.

@@ -1,0 +1,45 @@
+
+KEY DAX MEASURES – CUSTOMER CHURN ANALYTICS
+
+Total Customers =
+DISTINCTCOUNT(FactCustomer[customer_id])
+
+Churned Customers =
+CALCULATE([Total Customers], FactCustomer[churn] = 1)
+
+Active Customers =
+CALCULATE([Total Customers], FactCustomer[churn] = 0)
+
+Churn Rate % =
+DIVIDE([Churned Customers], [Total Customers], 0)
+
+Monthly Revenue (Proxy) =
+SUM(FactCustomer[Monthly Charges])
+
+Monthly Churned Revenue Loss =
+CALCULATE([Monthly Revenue (Proxy)], FactCustomer[churn] = 1)
+
+Revenue Per Customer =
+DIVIDE([Monthly Revenue (Proxy)], [Total Customers], 0)
+
+Churn Rate by Segment % =
+DIVIDE(
+    CALCULATE([Total Customers], FactCustomer[churn] = 1),
+    [Total Customers],
+    0
+)
+
+Avg Complaints (Churned) =
+CALCULATE(AVERAGE(FactCustomer[num_complaints]), FactCustomer[churn] = 1)
+
+Avg Service Calls (Churned) =
+CALCULATE(AVERAGE(FactCustomer[Num Service_Calls]), FactCustomer[churn] = 1)
+
+Avg Late Payments (Churned) =
+CALCULATE(AVERAGE(FactCustomer[Late_Payments]), FactCustomer[churn] = 1)
+
+Low Credit Churn Rate =
+CALCULATE([Churn Rate %], FactCustomer[credit_score] < 550)
+
+Low Credit Churn Multiplier =
+DIVIDE([Low Credit Churn Rate], [Churn Rate %], 0)

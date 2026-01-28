@@ -1,0 +1,15 @@
+customer_id,signup_date,age,gender,annual_income,education,marital_status,dependents,tenure,contract,payment_method,paperless_billing,senior_citizen,monthlycharges,totalcharges,num_services,has_phone_service,has_internet_service,has_online_security,has_online_backup,has_device_protection,has_tech_support,has_streaming_tv,has_streaming_movies,customer_satisfaction,num_complaints,num_service_calls,late_payments,avg_monthly_gb,days_since_last_interaction,credit_score,churn
+CUST0000000001,53:58.2,43,Female,55085.25,college,married,1,2,two_year,electronic_check,Yes,0,67.2,144.39,1,1,1,0,0,1,1,1,1,9,0,0,0,109.63,16,,0
+CUST0000000002,53:58.2,18,Male,60786.11,master,married,1,22,one_year,bank_transfer,Yes,0,71.54,1602.22,2,0,1,0,1,0,0,0,1,7,0,3,1,63.25,134,585,0
+CUST0000000003,53:58.2,38,Female,73184.32,high_school,widowed,0,3,two_year,credit_card,No,0,112.2,328.81,4,1,1,0,0,1,1,1,0,6,1,1,0,47.77,11,632,0
+CUST0000000004,53:58.2,44,Male,40923.78,high_school,married,1,6,two_year,bank_transfer,Yes,0,107.49,643.45,3,1,1,0,0,1,1,0,1,5,2,2,1,50.82,6,569,0
+CUST0000000005,53:58.2,45,Female,36400.94,bachelor,single,0,9,two_year,credit_card,Yes,0,110.05,648.79,3,0,1,0,0,0,0,0,1,8,1,1,0,16.74,18,657,0
+CUST0000000006,53:58.2,55,Female,30771.38,master,married,1,47,two_year,credit_card,Yes,0,71.8,3041.87,2,1,1,0,0,0,0,1,1,8,0,0,0,24.56,22,702,0
+CUST0000000007,53:58.2,47,Male,65503.82,college,married,0,26,two_year,electronic_check,Yes,0,126.85,3602.75,4,1,1,1,1,0,0,1,1,4,2,3,0,46.36,11,716,0
+CUST0000000008,53:58.2,39,Male,65039.32,college,single,0,18,one_year,electronic_check,No,0,121.04,2067.41,3,1,1,1,0,0,1,1,0,5,2,4,0,48.9,106,525,0
+CUST0000000009,53:58.2,31,Male,37306.25,bachelor,married,0,1,two_year,mailed_check,Yes,1,77.56,59.52,4,1,1,1,1,1,1,0,1,4,,0,0,94.64,28,637,0
+CUST0000000010,53:58.2,38,Female,40665.2,college,single,0,31,two_year,electronic_check,Yes,0,72.3,2060.67,1,1,1,0,0,0,1,0,0,5,0,1,0,11.33,91,850,0
+CUST0000000011,53:58.2,54,Female,31615.1,high_school,divorced,0,12,two_year,mailed_check,Yes,1,45.74,504.35,2,0,0,0,0,0,0,1,1,5,1,1,1,0,123,535,0
+CUST0000000012,53:58.2,57,Female,64892.48,high_school,single,1,38,one_year,electronic_check,Yes,0,80.55,3187.81,3,1,1,1,1,1,1,0,0,2,1,1,1,,1,,0
+CUST0000000013,53:58.2,34,Female,37552.18,college,married,1,7,two_year,bank_transfer,Yes,0,106.75,677.3,1,0,1,0,0,1,1,1,1,5,0,2,1,22.46,26,681,0
+CUST0000000014,53:58.2,60,Male,40267.77,college,single,0,1,two_year,bank_transfer,No,1,86.04,93.15,1,1,1,1,0,0,1,0,1,3,0,2,1,39.81,33,655,0
